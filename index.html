@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hi! It's Roser :)</title>
+  <meta name="description" content="PhD Candidate at the Music Technology Group (UPF) researching transparency and ethics of generative AI in music.">
+
+  <!-- Favicon of "RBR" in magenta -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='#f3f4f6'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Inter,Segoe UI,Arial,sans-serif' font-weight='800' font-size='27' letter-spacing='-1' fill='#c2187a'%3ERBR%3C/text%3E%3C/svg%3E">
+
+  <!-- Link previews -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://roserbatlleroca.github.io/">
+  <meta property="og:title" content="Roser Batlle Roca">
+  <meta property="og:description" content="PhD Candidate at the Music Technology Group (UPF) researching transparency and ethics of generative AI in music.">
+  <meta property="og:image" content="https://roserbatlleroca.github.io/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg:       #f3f4f6;   /* light grey page */
+      --card:     #ffffff;
+      --border:   #e2e5ea;
+      --text:     #1f2933;   /* charcoal */
+      --muted:    #5f6b7a;   /* mid grey */
+      --accent:   #c2187a;   /* magenta accent */
+      --accent-dk:#9d1463;
+      --accent-bg:#fbe9f3;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2.5rem 1.5rem;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    main {
+      max-width: 620px;
+      width: 100%;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 6vw, 2.8rem);
+      font-weight: 700;
+      letter-spacing: -0.025em;
+      line-height: 1.15;
+      margin-bottom: 0.75rem;
+    }
+
+    .role {
+      font-size: 1.05rem;
+      font-weight: 500;
+      color: var(--text);
+    }
+    .affiliation {
+      font-size: 1rem;
+      color: var(--muted);
+      margin-bottom: 1.75rem;
+    }
+
+    .summary {
+    color: var(--text);
+    font-size: 0.85rem;
+    margin: 0 0 2.25rem;
+    text-align: center;
+    text-wrap: balance;
+    }
+    .affiliation a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .affiliation a:hover { text-decoration: underline; }
+
+    .notice {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.4rem 1.6rem;
+      text-align: left;
+      margin-bottom: 2.25rem;
+      box-shadow: 0 1px 3px rgba(31, 41, 51, 0.05);
+    }
+    .notice h2 {
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.4rem;
+    }
+    .notice p {
+      color: var(--muted);
+      font-size: 0.8rem;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.7rem;
+    }
+    .links a {
+      font-size: 0.92rem;
+      font-weight: 500;
+      color: var(--accent);
+      text-decoration: none;
+      padding: 0.6rem 1.35rem;
+      border-radius: 999px;            /* fully rounded */
+      border: 1.5px solid var(--accent);
+      background: var(--card);
+      transition: background 0.2s, color 0.2s, transform 0.2s;
+    }
+    .links a:hover,
+    .links a:focus-visible {
+      background: var(--accent-bg);
+      transform: translateY(-1px);
+      outline: none;
+    }
+
+    footer {
+      margin-top: 3.5rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Roser Batlle Roca</h1>
+    <div class="role">PhD Candidate on Transparency &amp; Ethics of Generative AI in Music</div>
+    <div class="affiliation">
+      <a href="https://www.upf.edu/web/mtg" target="_blank" rel="noopener">Music Technology Group</a>
+      · Universitat Pompeu Fabra
+    </div>
+
+    <p class="summary">
+      My research focuses on making music-generative AI more transparent and accountable, through documentation frameworks 
+      that assess model openness, methods to detect potential training data replication, and perceptual studies with expert listeners. 
+      I aim to contribute to the responsible and open development of these systems, with attention to their ethical, social, 
+      legal and economic implications. I work in collaboration with Sony and the European Commission’s Joint Research Centre.
+    </p>
+
+    <section class="notice">
+      <h2>Site under construction</h2>
+      <p>
+        A full website with my research, publications and projects is on its way.
+        In the meantime, you can reach me or find my work through the links below.
+      </p>
+    </section>
+
+    <nav class="links">
+      <a href="mailto:roser.batlle.roca@gmail.com">Email</a>
+      <a href="https://github.com/roserbatlleroca" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://scholar.google.com/citations?view_op=list_works&hl=ca&hl=ca&user=e7WuLMwAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+      <a href="https://www.linkedin.com/in/roserbatlleroca/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://drive.google.com/file/d/1v62Dx1WUwVGhbXIsIiFPJSLsdL7imIE0/view?usp=drive_link" target="_blank" rel="noopener">CV</a>
+    </nav>
+  </main>
+
+  <footer>© 2026 Roser Batlle Roca</footer>
+</body>
+</html>
